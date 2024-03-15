@@ -4,24 +4,27 @@ import { HashLink as Link } from "react-router-hash-link";
 function Navbar() {
     return (
         <nav>
+            <div className="logo">
+                Logo
+            </div>
             <ul>
                 <li>
-                    <Link to="#welcome" className="Link">
+                    <Link to="#acceuil" className="Link">
                         Acceuil
                     </Link>
                 </li>
                 <li>
-                    <Link to="#presentation" className="Link">
+                    <Link to="#présentation" className="Link">
                         Présentation
                     </Link>
                 </li>
                 <li>
-                    <Link to="#realization" className="Link">
+                    <Link to="#réalisation" className="Link">
                         Réalisations
                     </Link>
                 </li>
                 <li>
-                    <Link to="#skills" className="Link">
+                    <Link to="#compétences" className="Link">
                         Compétences
                     </Link>
                 </li>

@@ -1,4 +1,26 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+    padding: 0px 50px;
+    gap: 50px;
+}
+
 .Link {
     text-decoration: none;
-    color: black;
+    color: white;
+}
+
+.logo {
+    padding: 0px 50px;
+    color: white;
 }

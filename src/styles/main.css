@@ -1,10 +1,83 @@
+@charset "UTF-8";
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  position: sticky;
+  top: 0;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: end;
+  padding: 0px 50px;
+  gap: 50px;
+}
+
 .Link {
   text-decoration: none;
-  color: black;
+  color: white;
+}
+
+.logo {
+  padding: 0px 50px;
+  color: white;
 }
 
 .contact {
   height: 1400px;
   width: 100%;
   color: black;
+}
+
+.contact::before {
+  content: "";
+  display: block;
+  height: 50px;
+  /* La hauteur de votre barre de navigation */
+  margin-top: -50px;
+  /* La même valeur négative pour remonter le pseudo-élément */
+  visibility: hidden;
+}
+
+.presentation::before {
+  content: "";
+  display: block;
+  height: 50px;
+  /* La hauteur de votre barre de navigation */
+  margin-top: -50px;
+  /* La même valeur négative pour remonter le pseudo-élément */
+  visibility: hidden;
+}
+
+.realization::before {
+  content: "";
+  display: block;
+  height: 50px;
+  /* La hauteur de votre barre de navigation */
+  margin-top: -50px;
+  /* La même valeur négative pour remonter le pseudo-élément */
+  visibility: hidden;
+}
+
+.skills::before {
+  content: "";
+  display: block;
+  height: 50px;
+  /* La hauteur de votre barre de navigation */
+  margin-top: -50px;
+  /* La même valeur négative pour remonter le pseudo-élément */
+  visibility: hidden;
+}
+
+.welcome::before {
+  content: "";
+  display: block;
+  height: 50px;
+  /* La hauteur de votre barre de navigation */
+  margin-top: -50px;
+  /* La même valeur négative pour remonter le pseudo-élément */
+  visibility: hidden;
 }/*# sourceMappingURL=main.css.map */

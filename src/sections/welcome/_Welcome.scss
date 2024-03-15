@@ -1,10 +1,5 @@
-.contact {
-    height: 1400px;
-    width: 100%;
-    color: black;
-}
 
-.contact::before {
+.welcome::before {
     content: "";
     display: block;
     height: 50px;
