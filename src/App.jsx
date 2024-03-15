@@ -1,5 +1,9 @@
+import SectionRoutes from "./SectionsRoutes";
+
 function App() {
-  return "First commit"
+  return (
+    <SectionRoutes />
+  );
 }
 
-export default App
+export default App;
