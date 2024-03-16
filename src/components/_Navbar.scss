@@ -1,26 +1,39 @@
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: black;
     position: sticky;
     top: 0;
-}
-
-ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: end;
-    padding: 0px 50px;
-    gap: 50px;
-}
-
-.Link {
-    text-decoration: none;
-    color: white;
+    height: 50px;
 }
 
 .logo {
     padding: 0px 50px;
     color: white;
+}
+
+ul {
+    display: flex;
+    padding: 0px 50px;
+    margin: 0px;
+    height: 100%;
+    align-items: center;
+}
+
+li {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    padding: 25px;
+}
+
+li.active {
+    background-color: blue;
+}
+
+a {
+    font-size: 20px;
+    letter-spacing: 3px;
 }

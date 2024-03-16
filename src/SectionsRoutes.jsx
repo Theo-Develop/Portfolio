@@ -12,8 +12,8 @@ import Contact from "./sections/contact/Contact";
 function SectionsRoutes() {
     return (
         <BrowserRouter>
-            <Navbar />
             <Welcome />
+            <Navbar />
             <Presentation />
             <Realization />
             <Skills />

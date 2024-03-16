@@ -1,10 +1,4 @@
 
-.skills::before {
-    content: "";
-    display: block;
-    height: 50px;
-    /* La hauteur de votre barre de navigation */
-    margin-top: -50px;
-    /* La même valeur négative pour remonter le pseudo-élément */
-    visibility: hidden;
+.skills {
+    scroll-margin: 55px;
 }
