@@ -21,11 +21,6 @@ function Navbar() {
                 }
             });
             setActiveSection(currentSection);
-
-            // Mise à jour de l'URL sans recharger la page
-            if (currentSection) {
-                window.history.pushState({}, "", currentSection);
-            }
         };
 
         window.addEventListener("scroll", handleScroll);
