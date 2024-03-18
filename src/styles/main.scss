@@ -1,9 +1,10 @@
 @import "./base/Base";
 @import "./base/Mixins";
 @import "./base/Variables";
-@import "../components/Navbar";
+@import "../components/Navbar/Navbar";
 @import "../sections/contact/Contact";
 @import "../sections/presentation/Presentation";
 @import "../sections/realization/Realization";
 @import "../sections/skills/Skills";
 @import "../sections/welcome/Welcome";
+@import "../components/Footer/Footer";
