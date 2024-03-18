@@ -21,6 +21,11 @@ function Navbar() {
                 }
             });
             setActiveSection(currentSection);
+
+            // Mise à jour de l'URL en scrollant
+            if (currentSection) {
+                window.history.pushState({}, "", currentSection);
+            }
         };
 
         window.addEventListener("scroll", handleScroll);
