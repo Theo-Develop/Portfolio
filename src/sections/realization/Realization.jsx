@@ -23,7 +23,7 @@ function Realization() {
                     {projectsData.map(project => (
                         <article key={project.id} className="card" onClick={() => openModal(`project${project.id}`)}>
                             <div className="card-content">
-                                <img src={project.picture} alt={`Image du ${project.title}`} />
+                                <img src={project.pictureLeft} alt={`Image du ${project.title}`} />
                                 <div className="text">
                                     <h3>{project.title}</h3>
                                     <p>{project.description}</p>

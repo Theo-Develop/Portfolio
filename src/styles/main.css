@@ -16,12 +16,9 @@ body {
 
 ul {
   list-style-type: none;
-  padding: 0;
-}
-
-a {
-  color: white;
-  /* color: inherit; */
+  display: flex;
+  padding: 0px 50px;
+  margin: 0px;
 }
 
 h1 {
@@ -63,7 +60,7 @@ $primary-color: #FF6060;
 $secondary-color: #F6F6F6;
 $tertiary-color: #E3E3E3;
 $font-family: 'Montserrat', sans-serif; */
-nav {
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -75,20 +72,17 @@ nav {
   z-index: 1;
 }
 
-.logo {
+.navbar.logo {
   padding: 0px 50px;
   color: black;
 }
 
-ul {
-  display: flex;
-  padding: 0px 50px;
-  margin: 0px;
+.navbar ul {
   height: 100%;
   align-items: center;
 }
 
-li {
+.navbar li {
   display: flex;
   height: 100%;
   width: 100%;
@@ -96,17 +90,17 @@ li {
   padding: 25px;
 }
 
-li.active {
+.navbar li.active {
   background-color: black;
   transition: background-color 2s ease-out;
 }
 
-li.active .Link {
+.navbar li.active .Link {
   color: #fff;
   transition: color 1s ease;
 }
 
-.Link {
+.navbar .Link {
   font-size: 20px;
   letter-spacing: 3px;
   color: black;
@@ -137,7 +131,7 @@ li.active .Link {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   border-radius: 20px;
   padding: 30px;
   background: #f5f5f5;
@@ -145,9 +139,8 @@ li.active .Link {
 
 .works-cards .card {
   display: flex;
-  flex-direction: column;
   width: 30%;
-  max-height: 250px;
+  height: 250px;
 }
 
 article.card {
@@ -168,8 +161,8 @@ article.card {
 .card-content img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .card-content .text {
@@ -239,13 +232,20 @@ article.card {
   background: black;
 }
 
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.75);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -256,17 +256,66 @@ article.card {
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
-  max-width: 500px;
-  width: 100%;
+  max-width: 800px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 
-.close-button {
-  float: right;
+.modal-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal-body {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.modal-body img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.modal-left,
+.modal-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 50%;
+  max-width: 50%;
+  text-align: left;
+}
+
+.modal-body ul {
+  list-style-type: disc;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-body li {
+  padding: 5px 0;
+}
+
+.modal-footer {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.modal-footer .button {
   border: none;
-  background: red;
-  color: #fff;
-  border-radius: 50%;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
   cursor: pointer;
-  width: 30px;
-  height: 30px;
 }/*# sourceMappingURL=main.css.map */

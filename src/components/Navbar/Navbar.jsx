@@ -43,7 +43,7 @@ function Navbar() {
     };
 
     return (
-        <nav>
+        <nav className="navbar">
             <div className="logo">Logo</div>
             <ul>
                 <li className={isActive("#acceuil") ? "active" : ""}>

@@ -1,4 +1,4 @@
-nav {
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -10,20 +10,17 @@ nav {
     z-index: 1;
 }
 
-.logo {
+.navbar.logo {
     padding: 0px 50px;
     color: black;
 }
 
-ul {
-    display: flex;
-    padding: 0px 50px;
-    margin: 0px;
+.navbar ul {
     height: 100%;
     align-items: center;
 }
 
-li {
+.navbar li {
     display: flex;
     height: 100%;
     width: 100%;
@@ -31,17 +28,17 @@ li {
     padding: 25px;
 }
 
-li.active {
+.navbar li.active {
     background-color: black;
     transition: background-color 2s ease-out;
 }
 
-li.active .Link {
+.navbar li.active .Link {
     color: #fff;
     transition: color 1s ease;
 }
 
-.Link {
+.navbar .Link {
     font-size: 20px;
     letter-spacing: 3px;
     color: black;

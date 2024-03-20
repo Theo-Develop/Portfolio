@@ -19,6 +19,11 @@ function Modal({ isOpen, onClose, modalType }) {
         if (isOpen) {
             window.addEventListener("keyup", handleKeyUp);
             window.addEventListener("mousedown", handleOutsideClick);
+            // Empêcher le scrolling
+            document.body.style.overflow = 'hidden';
+        } else {
+            // Autoriser le scrolling
+            document.body.style.overflow = 'visible';
         }
 
         // Nettoyer les écouteurs d"événements à la désactivation du composant
@@ -34,17 +39,45 @@ function Modal({ isOpen, onClose, modalType }) {
 
     return (
         <div className="modal-overlay">
-            <div className="modal-content" onClick={(e) => e.stopPropagation()}> {/* Empêche le clic de se propager au modal-overlay */}
-                <button onClick={onClose} className="close-button">×</button>
+            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                <div className="modal-header">
+                    <button onClick={onClose} className="close-button">×</button>
+                    {project && <h3>{project.title}</h3>}
+                </div>
                 {project ? (
-                    <div>
-                        <h3>{project.title}</h3>
-                        <p>{project.description}</p>
-                        <img src={project.picture} alt={`Image de ${project.title}`} />
+                    <div className="modal-body">
+                        <div className="modal-left">
+                            <img src={project.pictureLeft} alt={`Image de ${project.title}`} />
+                            <h4>RÉALISATION COMPLÈTE</h4>
+                            <ul>
+                                {project.listSKills.map((item, index) => (
+                                    <li key={index}>{item}</li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div className="modal-right">
+                            <img src={project.pictureRight} alt={`Image de ${project.title}`} />
+                            <h4>INFOS PROJET</h4>
+                            <div className="modal-description">
+                                <p>{project.resume}</p>
+                            </div>
+                        </div>
                     </div>
                 ) : (
                     <div>Projet non trouvé</div>
                 )}
+                <div className="modal-footer">
+                    {project.siteUrl && (
+                        <a href={project.siteUrl} className="button" target="_blank" rel="noopener noreferrer">
+                            VISITER LE SITE
+                        </a>
+                    )}
+                    {project.codeUrl && (
+                        <a href={project.codeUrl} className="button" target="_blank" rel="noopener noreferrer">
+                            CONSULTER LE CODE
+                        </a>
+                    )}
+                </div>
             </div>
         </div>
     );
