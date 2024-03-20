@@ -1,5 +1,3 @@
-import { BrowserRouter } from 'react-router-dom';
-
 import Navbar from "./components/Navbar/Navbar";
 import Welcome from "./sections/welcome/Welcome";
 import Presentation from "./sections/presentation/Presentation";
@@ -10,9 +8,9 @@ import Footer from "./components/Footer/Footer";
 
 
 // Set all Sections routes
-function SectionsRoutes() {
+function HomePage() {
     return (
-        <BrowserRouter>
+        <>
             <Welcome />
             <Navbar />
             <Presentation />
@@ -20,9 +18,9 @@ function SectionsRoutes() {
             <Skills />
             <Contact />
             <Footer />
-        </BrowserRouter>
+        </>
     )
 }
 
-export default SectionsRoutes;
+export default HomePage;
 

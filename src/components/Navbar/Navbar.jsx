@@ -8,6 +8,7 @@ function Navbar() {
         const sections = ["#acceuil", "#présentation", "#réalisation", "#compétences", "#contact"];
         const sectionElements = sections.map(section => document.querySelector(section));
 
+
         const handleScroll = () => {
             let currentSection = "";
             sectionElements.forEach((section, i) => {
@@ -20,12 +21,13 @@ function Navbar() {
                     }
                 }
             });
-            setActiveSection(currentSection);
 
             // Mise à jour de l'URL en scrollant
-            if (currentSection) {
+            if (currentSection !== activeSection) {
                 window.history.pushState({}, "", currentSection);
+                setActiveSection(currentSection);
             }
+
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -34,7 +36,7 @@ function Navbar() {
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
-    }, []);
+    }, [activeSection]);
 
     const isActive = (hash) => {
         return activeSection === hash;

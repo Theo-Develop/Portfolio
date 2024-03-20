@@ -1,9 +1,12 @@
-import SectionRoutes from "./SectionsRoutes";
+import HomePage from "./homePage";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <SectionRoutes />
-  );
+    <BrowserRouter>
+      <HomePage />
+    </BrowserRouter >
+  )
 }
 
 export default App;
