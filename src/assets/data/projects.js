@@ -20,7 +20,7 @@ const projectsData = [
         pictureRight: Booki2,
         listSKills: ["Implémenter une interface responsive avec HTML et CSS", "Intégrer du contenu conformément à une maquette avec HTML et CSS", "Etudier et découper une maquette", "Versionner son projet avec Git et Github", "Vérifier la qualité de son code à l'aide de validateur tels que le W3C", "Travailler en collaboration avec un UI Designer", "Installer un environnement de développement front-end"],
         resume: "Pour ce premier projet de formation, le but était de créer une page web statique et responsive en partant d'une maquette Figma et des photos fournis.",
-        siteUrl: "",
+        siteUrl: "https://booki-kappa.vercel.app",
         codeUrl: "https://github.com/Theo-Develop/OCProject2",
     },
     {
@@ -40,7 +40,7 @@ const projectsData = [
         pictureRight: Nina_Carducci2,
         listSKills: ["Optimiser les performances d’un site web", "Débugger un site web grâce aux Chrome DevTools", "Rédiger un cahier de recette pour tester un site", "Améliorer le référencement d'un site (SEO)", "Améliorer l'accessibilité d'un site", "Capacité à expliquer les modifications de manière claire et compréhensible", "Livrer un rapport d'intervention"],
         resume: "Peu de code à proprement parler pour ce projet, mais une découverte de beaucoup de notions importantes. Ce projet s'organise autour de 2 axes, le débug et l'optimisation. En partant d'un audit préalable réalisé sur le site mis à disposition pour le projet, nous devions corriger un bug de navigation dans la modale, un bug de sélection de filtre et optimiser le site pour améliorer les notes de performances, accessibilité et référencement.",
-        siteUrl: "",
+        siteUrl: "https://nina-carducci-pi-sandy.vercel.app",
         codeUrl: "https://github.com/Theo-Develop/OCProject5",
     },
     {
@@ -50,7 +50,7 @@ const projectsData = [
         pictureRight: Kasa2,
         listSKills: ["Configurer la navigation entre les pages de l'application avec React Router", "Initialiser une application avec Create React App", "Développer des éléments de l'interface d'un site web grâce à des composants React", "Développer l'ensemble d'une application React responsive en suivant une maquette", "Mettre en œuvre des animations CSS", "Développer une interface web avec Sass"],
         resume: "Découverte de React avec cet avant dernier projet de la formation. Avec le code du back-end, les codings guidelines du projet et des logements regroupés dans un fichier JSON, nous devions coder l'application en React pour obtenir un résultat fonctionnel, responsive et conforme à la maquette fournit.",
-        siteUrl: "",
+        siteUrl: "https://kasa-tau-ivory.vercel.app",
         codeUrl: "https://github.com/Theo-Develop/OCProject6",
     },
     {
