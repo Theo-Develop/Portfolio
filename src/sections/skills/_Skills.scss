@@ -4,3 +4,15 @@
     padding: 120px 0 100px;
     text-align: center;
 }
+
+.skills-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}

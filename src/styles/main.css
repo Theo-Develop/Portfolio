@@ -199,6 +199,18 @@ article.card {
   text-align: center;
 }
 
+.skills-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
 .welcome {
   position: relative;
   height: 100vh;
