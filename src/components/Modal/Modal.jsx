@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import projectsData from "../../assets/data/projects";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faX } from '@fortawesome/free-solid-svg-icons';
 
 function Modal({ isOpen, onClose, modalType }) {
     useEffect(() => {
@@ -41,7 +43,7 @@ function Modal({ isOpen, onClose, modalType }) {
         <div className="modal-overlay">
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 <div className="modal-header">
-                    <button onClick={onClose} className="close-button">×</button>
+                    <button onClick={onClose} className="close-button"><FontAwesomeIcon icon={faX} /></button>
                     {project && <h3>{project.title}</h3>}
                 </div>
                 {project ? (

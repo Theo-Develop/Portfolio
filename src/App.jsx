@@ -1,4 +1,4 @@
-import HomePage from "./homePage";
+import HomePage from "./HomePage";
 import { BrowserRouter } from "react-router-dom";
 
 function App() {
