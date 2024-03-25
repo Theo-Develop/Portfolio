@@ -2,15 +2,11 @@
 @import "./Mixins";
 
 * {
+    margin: 0;
     text-decoration: none;
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: $font-family;
-}
-
-body {
-    display: flex;
-    margin: 0px;
 }
 
 ul {

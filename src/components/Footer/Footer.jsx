@@ -1,11 +1,23 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
+
+
 function Footer() {
     return (
         <section id="footer" className="footer">
-            <h2>FOOTER</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Integer malesuada nunc vel risus commodo viverra maecenas accumsan lacus. Sollicitudin ac orci phasellus egestas tellus rutrum. A cras semper auctor neque vitae tempus. Mauris commodo quis imperdiet massa tincidunt nunc. Eget lorem dolor sed viverra ipsum nunc. Enim ut tellus elementum sagittis vitae et leo duis. Arcu non sodales neque sodales ut etiam sit amet. Molestie a iaculis at erat pellentesque adipiscing commodo elit at.
-            </p>
-        </section>
+            <div className="footer-container">
+                <ul>
+                    <li><a href="https://github.com/Theo-Develop" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faSquareGithub} /></a></li>
+                    <li><a href="email:theo.dev.lop@gmail.com"><FontAwesomeIcon icon={faEnvelope} /></a></li>
+                    <li><FontAwesomeIcon icon={faLinkedin} /></li>
+                </ul>
+                <p>
+                    © 2024 Théo DRESSY, Tous droits réservés.
+                </p>
+            </div>
+        </section >
     )
 }
 

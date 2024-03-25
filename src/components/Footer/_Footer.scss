@@ -4,3 +4,30 @@
     color: $primary-color;
     background: $tertiary-color;
 }
+
+.footer-container {
+    width: 100%;
+}
+
+.footer ul {
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.footer li {
+    display: inline-block;
+    margin: 50px;
+}
+
+.footer svg {
+    height: 70px;
+    width: 70px;
+    color: $primary-color;
+}
+
+.footer svg:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
