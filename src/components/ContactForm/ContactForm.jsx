@@ -1,7 +1,10 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 function ContactForm() {
+
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [stateMessage, setStateMessage] = useState(null);
     const form = useRef();
 
     // Définition des constantes pour les identifiants et la clé publique
@@ -21,12 +24,20 @@ function ContactForm() {
             )
             .then(
                 (result) => {
-                    console.log(result.text);
-                    console.log("message envoyé");
+                    console.log({ message: "Message envoyé!", details: result.message });
+                    setStateMessage("Message envoyé!");
+                    setIsSubmitting(false);
+                    setTimeout(() => {
+                        setStateMessage(null);
+                    }, 2500); // hide message after 2,5 seconds
                 },
                 (error) => {
-                    console.log(error.text);
-                    console.log("Veuillez réessayez ultérieurement");
+                    console.log({ message: "Quelque chose c'est mal passé. Merci d'essayer plus tard", details: error.message });
+                    setStateMessage("Quelque chose c'est mal passé. Merci d'essayer plus tard");
+                    setIsSubmitting(false);
+                    setTimeout(() => {
+                        setStateMessage(null);
+                    }, 2500); // hide message after 2,5 seconds
                 }
             );
         e.target.reset();
@@ -40,7 +51,8 @@ function ContactForm() {
             <input type="email" name="user_email" required />
             <label>Message</label>
             <textarea name="message" required />
-            <input type="submit" value="Send" />
+            <input type="submit" value="Send" disabled={isSubmitting} />
+            {stateMessage && <p>{stateMessage}</p>}
         </form>
     );
 }
