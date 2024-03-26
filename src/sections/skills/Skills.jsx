@@ -17,6 +17,7 @@ function Skills() {
                 {Object.entries(skillsByCategory).map(([category, skills]) => (
                     <div key={category} className="skills-category">
                         <h3>{category}</h3>
+                        <div className="moduleLine"></div>
                         <ul className="skills-list">
                             {skills.map((skill, index) => (
                                 <li key={index} className="skill-item">

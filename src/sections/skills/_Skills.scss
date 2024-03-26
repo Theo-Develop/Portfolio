@@ -5,9 +5,21 @@
     text-align: center;
 }
 
+.skills h3 {
+    padding: 20px;
+}
+
+.skills .moduleLine {
+    background: $tertiary-color;
+    width: 200px;
+    height: 1px;
+    margin: 20px auto;
+}
+
 .skills-list {
     display: flex;
     justify-content: space-around;
+    padding: 20px;
 }
 
 .skill-item {

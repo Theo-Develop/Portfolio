@@ -5,6 +5,7 @@ import Realization from "./sections/realization/Realization";
 import Skills from "./sections/skills/Skills";
 import Contact from "./sections/contact/Contact";
 import Footer from "./components/Footer/Footer";
+import ScrollUp from "./components/ScrollUp/ScrollUp";
 
 
 // Set all Sections routes
@@ -18,6 +19,7 @@ function HomePage() {
             <Skills />
             <Contact />
             <Footer />
+            <ScrollUp />
         </>
     )
 }

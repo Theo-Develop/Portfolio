@@ -112,5 +112,9 @@
     color: $primary-color;
     padding: 10px 20px;
     border-radius: 5px;
+}
+
+.modal-footer .button:hover {
+    background-color: green;
     cursor: pointer;
 }

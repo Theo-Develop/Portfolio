@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   text-decoration: none;
@@ -195,9 +196,21 @@ article.card {
   text-align: center;
 }
 
+.skills h3 {
+  padding: 20px;
+}
+
+.skills .moduleLine {
+  background: black;
+  width: 200px;
+  height: 1px;
+  margin: 20px auto;
+}
+
 .skills-list {
   display: flex;
   justify-content: space-around;
+  padding: 20px;
 }
 
 .skill-item {
@@ -371,6 +384,10 @@ article.card {
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
+}
+
+.modal-footer .button:hover {
+  background-color: green;
   cursor: pointer;
 }
 
@@ -410,4 +427,28 @@ article.card {
 
 .form input[type=submit]:hover {
   background-color: green;
+}
+
+.scrollUp {
+  position: fixed;
+  z-index: 999;
+  bottom: 1.8em;
+  right: 1.8em;
+  scale: 1.5;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 75%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.scrollUp:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+.rotate {
+  transform: rotate(180deg);
+  opacity: 0.3;
+  /* Empêche toute interaction */
+  pointer-events: none;
 }/*# sourceMappingURL=main.css.map */
