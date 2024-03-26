@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { HashLink as Link } from "react-router-hash-link";
+import logo from "../../assets/icons/logo/icon-cygne.webp";
 
 function Navbar() {
     const [activeSection, setActiveSection] = useState("");
@@ -45,7 +46,7 @@ function Navbar() {
     return (
         <nav className="navbar">
             <div className="logo">
-                <img src="../../src/assets/icons/logo/icon-cygne.webp" alt="icon-cygne icon" />
+                <img src={logo} alt="icon-cygne icon" />
             </div>
             <ul>
                 <li className={isActive("#acceuil") ? "active" : ""}>
