@@ -10,9 +10,8 @@
     z-index: 1;
 }
 
-.navbar.logo {
-    padding: 0px 50px;
-    color: $tertiary-color;
+.navbar .logo img {
+    padding-left: 25px;
 }
 
 .navbar ul {

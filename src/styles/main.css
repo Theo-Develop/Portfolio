@@ -60,9 +60,8 @@ h2 {
   z-index: 1;
 }
 
-.navbar.logo {
-  padding: 0px 50px;
-  color: black;
+.navbar .logo img {
+  padding-left: 25px;
 }
 
 .navbar ul {
@@ -220,6 +219,16 @@ article.card {
   gap: 20px;
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .welcome {
   position: relative;
   height: 100vh;
@@ -229,12 +238,27 @@ article.card {
   background-color: green;
   display: flex;
   align-items: center;
-  padding-left: 25%;
   text-align: center;
 }
 
 .content {
   color: white;
+  padding-left: 10%;
+}
+
+.line {
+  animation: slideInFromLeft 1s ease-out forwards;
+  opacity: 0;
+}
+
+.line:nth-child(1) {
+  animation-delay: 0.5s;
+  /* Délai pour la première ligne */
+}
+
+.line:nth-child(2) {
+  animation-delay: 1s;
+  /* Délai augmenté pour la deuxième ligne */
 }
 
 .footer {
