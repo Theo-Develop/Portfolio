@@ -30,6 +30,14 @@
 .line {
     animation: slideInFromLeft 1s ease-out forwards;
     opacity: 0;
+
+    @include tablet-smallDesktop {
+        font-size: 30px;
+    }
+
+    @include mobile {
+        font-size: 20px;
+    }
 }
 
 .line:nth-child(1) {

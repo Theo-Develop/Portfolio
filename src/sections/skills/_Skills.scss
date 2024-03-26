@@ -20,6 +20,14 @@
     display: flex;
     justify-content: space-around;
     padding: 20px;
+
+    @include tablet-smallDesktop {
+        flex-wrap: wrap;
+    }
+
+    @include mobile {
+        flex-wrap: wrap;
+    }
 }
 
 .skill-item {

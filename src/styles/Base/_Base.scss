@@ -38,11 +38,11 @@ h2 {
         width: 1170px;
     }
 
-    @include smallDesktop {
-        width: 970px;
+    @include tablet-smallDesktop {
+        width: 750px;
     }
 
-    @include tablet {
-        width: 750px;
+    @include mobile {
+        width: 100%;
     }
 }

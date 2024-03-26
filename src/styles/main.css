@@ -37,14 +37,14 @@ h2 {
     width: 1170px;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
   }
 }
 
@@ -55,18 +55,39 @@ h2 {
   background-color: #fff;
   position: sticky;
   top: 0;
-  height: 50px;
+  height: 48px;
   border: 1px solid #f5f5f5;
   z-index: 1;
+}
+
+.navbar .logo {
+  display: flex;
 }
 
 .navbar .logo img {
   padding-left: 25px;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .navbar .logo img {
+    padding-left: 0;
+  }
+}
 
 .navbar ul {
   height: 100%;
   align-items: center;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .navbar ul {
+    justify-content: start;
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  .navbar ul {
+    justify-content: start;
+    padding: 0;
+  }
 }
 
 .navbar li {
@@ -74,7 +95,7 @@ h2 {
   height: 100%;
   width: 100%;
   align-items: center;
-  padding: 25px;
+  padding: 24px;
 }
 
 .navbar li.active {
@@ -92,6 +113,36 @@ h2 {
   letter-spacing: 3px;
   color: black;
   transition: color 3s ease;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .navbar .Link {
+    font-size: 12px;
+    letter-spacing: normal;
+  }
+}
+@media (max-width: 767px) {
+  .navbar .Link {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.navbar ul li .Link .text {
+  display: inline;
+}
+@media (max-width: 767px) {
+  .navbar ul li .Link .text {
+    display: none;
+  }
+}
+
+.navbar ul li .Link svg {
+  display: none;
+}
+@media (max-width: 767px) {
+  .navbar ul li .Link svg {
+    display: inline;
+  }
 }
 
 .contact {
@@ -211,6 +262,16 @@ article.card {
   justify-content: space-around;
   padding: 20px;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .skills-list {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 767px) {
+  .skills-list {
+    flex-wrap: wrap;
+  }
+}
 
 .skill-item {
   display: flex;
@@ -249,6 +310,16 @@ article.card {
 .line {
   animation: slideInFromLeft 1s ease-out forwards;
   opacity: 0;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .line {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .line {
+    font-size: 20px;
+  }
 }
 
 .line:nth-child(1) {
@@ -329,6 +400,11 @@ article.card {
   /* Internet Explorer 10+ */
   scrollbar-width: none;
   /* Firefox */
+}
+@media (max-width: 767px) {
+  .modal-content {
+    font-size: 12px;
+  }
 }
 
 .modal-content::-webkit-scrollbar {
