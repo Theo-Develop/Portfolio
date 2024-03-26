@@ -20,6 +20,10 @@
     @include tablet-smallDesktop {
         padding-left: 0;
     }
+
+    @include mobile {
+        padding-left: 0;
+    }
 }
 
 .navbar ul {
@@ -45,6 +49,10 @@
     align-items: center;
     padding: 24px;
 
+    @include mobile {
+        padding-left:15px;
+        padding-right:15px;
+    }
 }
 
 .navbar li.active {

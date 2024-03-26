@@ -25,6 +25,11 @@ h2 {
   font-size: 30px;
   letter-spacing: 3px;
 }
+@media (max-width: 767px) {
+  h2 {
+    font-size: 20px;
+  }
+}
 
 .container {
   padding-left: 15px;
@@ -72,6 +77,11 @@ h2 {
     padding-left: 0;
   }
 }
+@media (max-width: 767px) {
+  .navbar .logo img {
+    padding-left: 0;
+  }
+}
 
 .navbar ul {
   height: 100%;
@@ -96,6 +106,12 @@ h2 {
   width: 100%;
   align-items: center;
   padding: 24px;
+}
+@media (max-width: 767px) {
+  .navbar li {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .navbar li.active {
@@ -539,6 +555,11 @@ article.card {
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 75%;
   transition: transform 0.3s ease-in-out;
+}
+@media (max-width: 767px) {
+  .scrollUp {
+    display: none;
+  }
 }
 
 .scrollUp:hover {
