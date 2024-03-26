@@ -45,7 +45,7 @@ function Navbar() {
     return (
         <nav className="navbar">
             <div className="logo">
-                <img src="./../src/assets/icons/logo/logo48x48.ico" alt="Logo" />
+                <img src="../../src/assets/icons/logo/logo.webp" alt="Logo" />
             </div>
             <ul>
                 <li className={isActive("#acceuil") ? "active" : ""}>
