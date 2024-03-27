@@ -46,7 +46,7 @@ function Modal({ isOpen, onClose, modalType }) {
                     <button onClick={onClose} className="close-button"><FontAwesomeIcon icon={faX} /></button>
                     {project && <h3>{project.title}</h3>}
                 </div>
-                {project ? (
+                {!!project && (
                     <div className="modal-body">
                         <div className="modal-left">
                             <img src={project.pictureLeft} alt={`Image de ${project.title}`} />
@@ -65,7 +65,8 @@ function Modal({ isOpen, onClose, modalType }) {
                             </div>
                         </div>
                     </div>
-                ) : (
+                )}
+                {!project && (
                     <div>Projet non trouvé</div>
                 )}
                 <div className="modal-footer">

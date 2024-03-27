@@ -6,8 +6,9 @@ function ScrollUp() {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
+        const welcomeSection = document.querySelector('.welcome');
+
         const toggleVisibility = () => {
-            const welcomeSection = document.querySelector('.welcome');
             const isInWelcomeSection = welcomeSection && welcomeSection.getBoundingClientRect().top >= 0;
             setIsVisible(!isInWelcomeSection);
         };
