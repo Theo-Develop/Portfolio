@@ -13,12 +13,20 @@
     border-radius: 20px;
     padding: 30px;
     background: $secondary-color;
+
+    @include mobile {
+        flex-direction: column;
+    }
 }
 
 .works-cards .card {
     display: flex;
     width: 30%;
     height: 250px;
+
+    @include mobile {
+        width: 100%;
+    }
 }
 
 article.card {

@@ -74,6 +74,10 @@
     width: 100%;
     justify-content: space-between;
     margin-bottom: 20px;
+
+    @include mobile {
+        flex-direction: column;
+    }
 }
 
 .modal-body img {
@@ -90,6 +94,10 @@
     flex-basis: 50%;
     max-width: 50%;
     text-align: left;
+
+    @include mobile {
+        max-width: 100%;
+    }
 }
 
 .modal-body ul {
