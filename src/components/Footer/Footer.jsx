@@ -14,7 +14,7 @@ function Footer() {
                     <li><FontAwesomeIcon icon={faLinkedin} /></li>
                 </ul>
                 <p>
-                    © 2024 Théo DRESSY, Tous droits réservés.
+                    © 2024 Théo DRESSY.
                 </p>
             </div>
         </section >
