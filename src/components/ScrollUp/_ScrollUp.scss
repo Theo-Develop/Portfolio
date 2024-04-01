@@ -8,10 +8,6 @@
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 75%;
     transition: transform 0.3s ease-in-out;
-
-    @include mobile {
-        display: none;
-    }
 }
 
 .scrollUp:hover {
@@ -22,6 +18,10 @@
 .rotate {
     transform: rotate(180deg);
     opacity: 0.3;
-    /* Empêche toute interaction */
-    pointer-events: none;
+}
+
+/* Assure que le style au survol ne s'applique pas quand .rotate est actif */
+.scrollUp.rotate:hover {
+    cursor: not-allowed;
+    transform: rotate(180deg);
 }

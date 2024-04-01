@@ -19,6 +19,10 @@
 .footer li {
     display: inline-block;
     margin: 50px;
+
+    @include mobile {
+        margin: 30px;
+    }
 }
 
 .footer svg {
